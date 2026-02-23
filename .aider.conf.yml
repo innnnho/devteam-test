@@ -1,0 +1,24 @@
+# ─── Model Configuration ─────────────────────────
+model: anthropic/claude-sonnet-4-5
+weak-model: anthropic/claude-haiku-3-5
+editor-model: anthropic/claude-sonnet-4-5
+
+# ─── Behavior ────────────────────────────────────
+auto-commits: true
+yes-always: true
+dirty-commits: true
+attribute-commit-message-author: true
+attribute-co-authored-by: true
+stream: false
+suggest-shell-commands: false
+
+# ─── Conventions (always loaded as read-only) ────
+read:
+  - CONVENTIONS.md
+
+# ─── Repository Map ──────────────────────────────
+map-tokens: 4096
+subtree-only: false
+
+# ─── Files to ignore ─────────────────────────────
+# Aider won't touch these
